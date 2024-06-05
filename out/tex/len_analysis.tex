@@ -1,0 +1,26 @@
+\begin{table}
+\caption{Descriptive statistics of metrics of T5-small models trained on different number of weeks. Bold indicates the highest value, underline the second highest, and italic the lowest.}
+\label{tab:len_analysis}
+\begin{tabular}{llrrrr}
+\toprule
+ & n & 2 & 3 & 4 & 5 \\
+\midrule
+\multirow[c]{3}{*}{accuracy} & mean & \textit{0.749} & 0.754 & \textbf{0.760} & \underline{0.760} \\
+ & std & \textbf{0.103} & \underline{0.097} & 0.094 & \textit{0.088} \\
+ & 50\% & 0.787 & \textit{0.779} & \textbf{0.795} & \underline{0.791} \\
+\cline{1-6}
+\multirow[c]{3}{*}{precision} & mean & \textit{0.710} & 0.710 & \underline{0.714} & \textbf{0.724} \\
+ & std & \textit{0.151} & \underline{0.152} & \textbf{0.162} & 0.152 \\
+ & 50\% & \underline{0.741} & \textbf{0.742} & 0.733 & \textit{0.720} \\
+\cline{1-6}
+\multirow[c]{3}{*}{recall} & mean & \textit{0.664} & 0.673 & \textbf{0.690} & \underline{0.685} \\
+ & std & \textit{0.162} & \underline{0.176} & 0.172 & \textbf{0.177} \\
+ & 50\% & \textit{0.710} & 0.715 & \textbf{0.752} & \underline{0.748} \\
+\cline{1-6}
+\multirow[c]{3}{*}{f1} & mean & \textit{0.671} & 0.675 & \textbf{0.686} & \underline{0.683} \\
+ & std & \textit{0.134} & \underline{0.140} & \textbf{0.147} & 0.136 \\
+ & 50\% & \textbf{0.710} & \textit{0.691} & 0.707 & \underline{0.709} \\
+\cline{1-6}
+\bottomrule
+\end{tabular}
+\end{table}

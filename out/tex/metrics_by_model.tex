@@ -1,0 +1,26 @@
+\begin{table}
+\caption{Metrics by model (T5-base with 4 weeks of prompt data vs baseline)}
+\label{tab:metrics_by_model}
+\begin{tabular}{llrrrrrr}
+\toprule
+ & model & GRU & LSTM & MLP & NHITS & TFT & t5-base \\
+\midrule
+\multirow[c]{3}{*}{accuracy} & mean & \underline{0.723} & 0.709 & 0.703 & \textit{0.664} & 0.681 & \textbf{0.772} \\
+ & std & 0.079 & \underline{0.084} & 0.055 & 0.062 & \textit{0.046} & \textbf{0.092} \\
+ & 50\% & \underline{0.754} & 0.724 & 0.709 & \textit{0.662} & 0.682 & \textbf{0.799} \\
+\cline{1-8}
+\multirow[c]{3}{*}{precision} & mean & 0.648 & \underline{0.659} & 0.628 & \textit{0.587} & 0.597 & \textbf{0.731} \\
+ & std & \textit{0.154} & 0.169 & \underline{0.175} & \textbf{0.181} & 0.167 & 0.158 \\
+ & 50\% & 0.666 & \underline{0.685} & 0.650 & \textit{0.624} & 0.655 & \textbf{0.768} \\
+\cline{1-8}
+\multirow[c]{3}{*}{recall} & mean & \textbf{0.702} & 0.665 & 0.684 & \textit{0.657} & 0.688 & \underline{0.697} \\
+ & std & 0.150 & \underline{0.165} & 0.161 & \textbf{0.184} & \textit{0.114} & 0.162 \\
+ & 50\% & \underline{0.729} & 0.686 & 0.684 & \textit{0.668} & 0.696 & \textbf{0.730} \\
+\cline{1-8}
+\multirow[c]{3}{*}{f1} & mean & \underline{0.661} & 0.638 & 0.636 & \textit{0.595} & 0.624 & \textbf{0.700} \\
+ & std & 0.127 & 0.123 & 0.127 & \textbf{0.149} & \textit{0.119} & \underline{0.134} \\
+ & 50\% & 0.667 & \underline{0.670} & 0.669 & 0.662 & \textit{0.660} & \textbf{0.732} \\
+\cline{1-8}
+\bottomrule
+\end{tabular}
+\end{table}

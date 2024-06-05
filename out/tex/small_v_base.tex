@@ -1,0 +1,26 @@
+\begin{table}
+\caption{Metrics of T5-small and T5-base models trained with 4 weeks of prompt data. Bold values are the highest.}
+\label{tab:small_v_base}
+\begin{tabular}{llrr}
+\toprule
+ & model & t5-base & t5-small \\
+\midrule
+\multirow[c]{3}{*}{accuracy} & mean & \textbf{0.772} & 0.760 \\
+ & std & 0.092 & \textbf{0.094} \\
+ & 50\% & \textbf{0.799} & 0.795 \\
+\cline{1-4}
+\multirow[c]{3}{*}{precision} & mean & \textbf{0.731} & 0.714 \\
+ & std & 0.158 & \textbf{0.162} \\
+ & 50\% & \textbf{0.768} & 0.733 \\
+\cline{1-4}
+\multirow[c]{3}{*}{recall} & mean & \textbf{0.697} & 0.690 \\
+ & std & 0.162 & \textbf{0.172} \\
+ & 50\% & 0.730 & \textbf{0.752} \\
+\cline{1-4}
+\multirow[c]{3}{*}{f1} & mean & \textbf{0.700} & 0.686 \\
+ & std & 0.134 & \textbf{0.147} \\
+ & 50\% & \textbf{0.732} & 0.707 \\
+\cline{1-4}
+\bottomrule
+\end{tabular}
+\end{table}
